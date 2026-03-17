@@ -19,3 +19,13 @@ cd backend
 npm install
 npm start
 ```
+
+## Root commands
+```bash
+npm install
+npm run start:frontend
+npm run start:backend
+npm run build:frontend
+npm run build:backend
+npm run start
+```
