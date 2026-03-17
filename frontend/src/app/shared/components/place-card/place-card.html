@@ -1,0 +1,28 @@
+<div class="card">
+  <img class="place-img" [src]="place.image" (error)="place.image = 'assets/images/cafe1.jpg'" />
+  
+
+  <div class="content">
+    <div class="top">
+      <h3>{{ place.name }}</h3>
+
+      <div class="rating">  
+        ⭐ {{ place.rating }}
+      </div>
+    </div>
+
+    <!-- <span class="distance-badge">{{ place.distance }}</span> -->
+    
+    <div class="tags">
+      <span *ngFor="let tag of place.tags">{{ tag }}</span>
+    </div>
+    
+    <div class="bottom">
+      <span class="price">₹{{ place.price }}</span>
+
+      <span class="crowd" [ngClass]="place.crowd">
+        {{ place.crowd }}
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.empty {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 30px;
+}

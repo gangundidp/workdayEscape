@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Workday Escape</h1>
+  <p class="subtitle">Find your perfect break spot in Bengaluru</p>
+
+  <app-filter-bar (filtersChanged)="onFiltersChanged($event)"></app-filter-bar>
+
+  <div class="places">
+    <app-place-card *ngFor="let place of places" [place]="place"></app-place-card>
+  </div>
+
+  <div *ngIf="places.length === 0" class="empty">
+    No places found. Try different filters
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="filter-bar">
+  <select [(ngModel)]="filters.area">
+    <option value="">Area</option>
+    <option>HSR</option>
+    <option>Whitefield</option>
+    <option>Koramangala</option>
+  </select>
+
+  <select [(ngModel)]="filters.time">
+    <option value="">Time</option>
+    <option>morning</option>
+    <option>lunch</option>
+    <option>evening</option>
+  </select>
+
+  <button (click)="applyFilters()">Search</button>
+</div>
