@@ -7,6 +7,11 @@ import { Place } from '../models/place.model';
   providedIn: 'root',
 })
 export class PlaceService {
+  private apiUrl = 'http://localhost:3000/api/places';
 
-  private apiUrl = 'http://localhost:3000/places';
+  constructor(private http: HttpClient) {}
+
+  getPlaces(): Observable<Place[]> {
+    return this.http.get<Place[]>(this.apiUrl);
+  }
 }
